@@ -16,24 +16,24 @@ of it requires the prior written permission of Adobe.
 
 return {
 
-	LrSdkVersion = 3.0,
-	LrSdkMinimumVersion = 1.3, -- minimum SDK version required by this plugin
+  LrSdkVersion        = 3.0,
+  LrSdkMinimumVersion = 1.3, -- minimum SDK version required by this plugin
 
-	LrPluginName = "Sample Metadata Post Process",
-	LrToolkitIdentifier = 'sample.metaexportfilter',
-	
-	LrExportFilterProvider = {{
-		title = LOC "$$$/SDK/MetaExportFilter/Sample=Metadata Post Process 1", -- the string that appears in the export filter section of the export dialog in LR
-		file = 'MetadataExportFilterProvider.lua', -- name of the file containing the filter definition script
-		id = "metadata1",  -- unique identifier for export filter
-	},
+  LrPluginName        = "Sample Metadata Post Process",
+  LrToolkitIdentifier = 'sample.metaexportfilter',
+  
+  LrExportFilterProvider = {{
+    title = LOC "$$$/SDK/MetaExportFilter/Sample=Metadata Post Process 1", -- the string that appears in the export filter section of the export dialog in LR
+    file  = 'MetadataExportFilterProvider.lua', -- name of the file containing the filter definition script
+    id    = "metadata1",  -- unique identifier for export filter
+  },
 
-	{
-		title = LOC "$$$/SDK/MetaExportFilter/Sample=Metadata Post Process 2", -- the string that appears in the export filter section of the export dialog in LR
-		file = 'MetadataExportFilterProvider.lua', -- name of the file containing the filter definition script
-		id = "metadata2",  -- unique identifier for export filter
-	}},
+  {
+    title = LOC "$$$/SDK/MetaExportFilter/Sample=Metadata Post Process 2", -- the string that appears in the export filter section of the export dialog in LR
+    file  = 'MetadataExportFilterProvider.lua', -- name of the file containing the filter definition script
+    id    = "metadata2",  -- unique identifier for export filter
+  }},
 
-	VERSION = { major=5, minor=0, revision=0, build=907681, },
+  VERSION = { major=5, minor=0, revision=0, build=907681, },
 
 }
